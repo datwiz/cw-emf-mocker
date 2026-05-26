@@ -1,5 +1,7 @@
 # cw-emf-mocker
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 A Rust CLI tool that generates synthetic HTTP request/response latency events
 and emits them as [AWS CloudWatch Embedded Metric Format (EMF)][emf] JSON
 records — one record per line on stdout.
@@ -118,6 +120,10 @@ complete immediately — no sleeping.
 
 - `--post-url` — POST each flushed record to a CloudWatch Logs / EMF
   ingestion endpoint via an HTTP client.
+
+## License
+
+MIT — see [LICENSE](LICENSE) for details.
 
 [emf]: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Embedded_Metric_Format_Specification.html
 [poisson]: https://en.wikipedia.org/wiki/Poisson_point_process
